@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deftext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dirtywhite"
+    tools:context=".AndSyntaxFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="359dp"
+        android:layout_height="575dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="#120F0F"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/wordfragtexts"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="@font/press_start_2p"
+                android:text="Syntax"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.015" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="356dp"
+                android:layout_height="341dp"
+                android:layout_marginTop="12dp"
+                android:fillViewport="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/wordfragtexts">
+
+                <TextView
+                    android:id="@+id/synfragtext2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:fontFamily="@font/ntr"
+                    android:nestedScrollingEnabled="false"
+                    android:text="Very long text to make it scroll horizontally. Very long text to make it scroll horizontally. Very long text to make it scroll horizontally. Very long text to make it scroll horizontally. Very long text to make it scroll horizontally. Very long text to make it scroll horizontally."
+                    android:textColor="#F4F2F2"
+                    android:textColorLink="#FFFFFF"
+                    android:textSize="22sp"
+                    app:autoSizeTextType="none" />
+            </androidx.core.widget.NestedScrollView>
+
+            <ScrollView
+                android:id="@+id/verticalScrollView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

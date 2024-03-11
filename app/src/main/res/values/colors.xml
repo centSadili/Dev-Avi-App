@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#1360D5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="dirtywhite">#F5F5F5</color>
+    <color name="your_status_bar_color">#000000</color>
+    <color name="my_light_primary">#ffffff</color>
+    <color name="statusbar">#000000</color>
+
+
+</resources>
