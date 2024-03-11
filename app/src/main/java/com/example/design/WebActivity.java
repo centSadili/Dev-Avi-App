@@ -1,6 +1,7 @@
 package com.example.design;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -15,6 +16,7 @@ public class WebActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
+        getWindow().setStatusBarColor(ContextCompat.getColor(WebActivity.this,R.color.statusbar));
 
         // Get the data passed from the intent
         String weblink = getIntent().getStringExtra("Description");

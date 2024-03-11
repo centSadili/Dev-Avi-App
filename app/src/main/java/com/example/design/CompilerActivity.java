@@ -1,6 +1,7 @@
 package com.example.design;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,6 +17,7 @@ public class CompilerActivity extends AppCompatActivity implements recycler_inte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_compiler);
+        getWindow().setStatusBarColor(ContextCompat.getColor(CompilerActivity.this,R.color.statusbar));
         recyclerview = findViewById(R.id.recyclerview);
         recyclerview.setLayoutManager(new LinearLayoutManager(this));
 

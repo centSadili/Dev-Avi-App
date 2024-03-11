@@ -4,6 +4,7 @@ import static android.content.ContentValues.TAG;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -39,6 +40,7 @@ public class HistoryActivity extends AppCompatActivity implements RecyclerViewIn
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
+        getWindow().setStatusBarColor(ContextCompat.getColor(HistoryActivity.this,R.color.statusbar));
         context = this;
         dbAdapter = new DBAdapter(context);
         dbAdapter2 = new DBAdapter2(context);

@@ -44,7 +44,7 @@
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView10"
             android:layout_width="98dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
@@ -89,7 +89,7 @@
             app:srcCompat="@drawable/delete_sweep_svgrepo_com" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/textView11"
             android:layout_width="93dp"
             android:layout_height="32dp"
             android:fontFamily="@font/press_start_2p"
