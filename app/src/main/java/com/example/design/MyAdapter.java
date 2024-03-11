@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>  {
+
     private Context context;
     private ArrayList<String> word;
     private ArrayList<String> category; // Added category ArrayList<String>
@@ -80,6 +81,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>  {
             word.addAll(filteredList); // Add all elements from the filtered list
         }else{
             word.addAll(filteredList);
+
         }
         // Notify adapter about data change
         notifyDataSetChanged();

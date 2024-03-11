@@ -103,14 +103,22 @@ public class MainActivity2 extends AppCompatActivity implements RecyclerViewInte
     private void filter(String text) {
         ArrayList<String> filteredList = new ArrayList<>();
 
-        for (String item : wordList) {
-            if (item.toLowerCase().contains(text.toLowerCase())) {
-                filteredList.add(item);
+        if (text.isEmpty()) {
+            // If the search text is empty, show the original list
+            filteredList.addAll(wordList);
+        } else {
+            // Filter the list based on the new text
+            for (String item : wordList) {
+                if (item.toLowerCase().contains(text.toLowerCase())) {
+                    filteredList.add(item);
+                }
             }
         }
 
         myAdapter.filterList(filteredList);
     }
+
+
 
     private boolean copyDatabase(Context context) {
         try {
