@@ -25,7 +25,8 @@
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:queryHint="ENTER A WORD..."/>
+        android:queryHint="ENTER A WORD..."
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
