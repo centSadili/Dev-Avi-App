@@ -63,6 +63,7 @@
                         android:autoSizeMaxTextSize="16dp"
                         android:autoSizeMinTextSize="12dp"
                         android:autoSizeTextType="none"
+                        android:fontFamily="@font/ntr"
                         android:text="Your text goes here."
                         android:textColor="#FFFFFF"
                         android:textIsSelectable="false"
