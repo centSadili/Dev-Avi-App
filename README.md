@@ -1,0 +1,1 @@
+An all-in-one reference tool for aspiring Android developers using Android Studio — this app serves as a dictionary of syntax with detailed descriptions, comprehensive documentation for various compilers, and even includes an integrated coding environment to write and test code directly within the app
